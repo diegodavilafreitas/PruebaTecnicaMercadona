@@ -1,0 +1,29 @@
+
+<div class="modalEditar">
+
+    
+    <div class="data" *ngFor="let element of products">
+
+        <div *ngIf="element._id == productID" class="editInfo">
+            <form>
+                <div>
+                    <h3>Editar producto</h3>
+                </div>
+                <label for="">TITULO</label><br>
+                <input formControlName="titulo" type="text" value="{{element.titulo}}"> <br>
+                <label for="">PRECIO</label><br>
+                <input formControlName="precio" type="text" value="{{element.precio| currency: element.currency}}"> <br>
+                <label for="">PESO/FORMATO</label><br>
+                <input formControlName="pesoFormato" type="text" value="{{element.pesoFormato}}"> <br>
+                <label for="">IMAGEN</label><br>
+                <input formControlName="imagen" type="url" value="{{element.image}}"> <br>
+                <div class="divA"><a [routerLink]="['/listado']" [routerLinkActive]="['active']">Editar</a></div>
+                
+            </form>
+        </div>
+        
+        
+    </div>
+    
+
+</div>

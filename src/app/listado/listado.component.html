@@ -1,0 +1,18 @@
+
+
+<div *ngIf="products">
+
+    <div class="trajetaProducto">
+        <li *ngFor="let element of products">
+            <div class="info">
+                <strong><p>Titulo: {{element.titulo}}</p></strong>
+                <strong><p>Precio: {{element.precio  | currency: element.currency}}</p></strong>
+                <strong><p>Peso/formato: {{element.pesoFormato}}</p></strong>
+                <div class="divEdit"><a [routerLink]="['/editado/', element._id]" [routerLinkActive]="['active']">Editar</a></div>
+                <div class="divA"><a [routerLink]="['/detallesProducto/', element._id]" [routerLinkActive]="['active']">Detalles</a></div>
+            </div>
+            <img src="{{element.image}}">
+        </li>
+    </div>
+
+</div>

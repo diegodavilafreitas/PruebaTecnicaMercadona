@@ -1,0 +1,22 @@
+#globalDiv{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.appNav{
+    width: auto;
+    padding: 10px;
+}
+
+.appNav div{
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.appNav div a{
+    margin: 0.1em;
+    padding: 0.2em;
+    background-color: rgb(20, 47, 95);
+    color: white;
+    text-decoration: none;
+    border-radius: 0.2em;
+}

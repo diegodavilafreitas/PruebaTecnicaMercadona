@@ -1,0 +1,41 @@
+.trajetaProducto li{
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #229E6B;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.info{
+    padding: 1.5em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: azure;
+}
+
+.divA{
+    width: 10rem;
+    border-radius: 20px;
+    border-color: transparent;
+    text-align: center;
+    background-color: #0077ED;
+    margin-bottom: 5px;
+}
+.divA a{
+    text-decoration: none;
+    color: azure;
+}
+
+.divEdit{
+    width: 10rem;
+    border-radius: 20px;
+    border-color: transparent;
+    text-align: center;
+    background-color: #FFE804;
+    margin-bottom: 5px;
+}
+.divEdit a{
+    text-decoration: none;
+    color: black;
+}

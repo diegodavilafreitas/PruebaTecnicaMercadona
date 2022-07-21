@@ -1,0 +1,19 @@
+
+<div class="modalDetalles">
+    
+    <div class="data" *ngFor="let element of products">
+        <div *ngIf="element._id == productID" class="editInfo">
+            <h1>Detalles del producto</h1>
+            <strong><p>ID de producto: {{element._id}}</p></strong>
+            <strong><p>Titulo: {{element.titulo}}</p></strong>
+            <strong><p>Precio: {{element.precio}}</p></strong>
+            <strong><p>Moneda: {{element.currency}}</p></strong>
+            <strong><p>UUID: {{element.uuid}}</p></strong>
+            <strong><p>Marca: {{element.marca}}</p></strong>
+            <strong><p>Peso/Formato: {{element.pesoFormato}}</p></strong>
+            <div class="divA"><a [routerLink]="['/listado']" [routerLinkActive]="['active']">Listado</a></div>
+        </div>
+        
+    </div>
+    
+</div>

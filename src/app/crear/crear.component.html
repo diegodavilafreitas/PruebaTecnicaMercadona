@@ -1,0 +1,22 @@
+
+<div class="modalCrear">
+    <div class="data">
+        <form [formGroup]="form" (submit)="addProduct()">
+            <div>
+                <h3>Crear producto</h3>
+            </div>
+            <label for="">TITULO</label><br>
+            <input formControlName="titulo" type="text"> <br>
+            <label for="">PRECIO</label><br>
+            <input formControlName="precio" type="text"> <br>
+            <label for="">PESO/FORMATO</label><br>
+            <input formControlName="pesoFormato" type="text"> <br>
+            <label for="">IMAGEN</label><br>
+            <input formControlName="imagen" type="url"> <br>
+            <button (click)="btnCrearAlert()" [routerLink]="['/listado']" [routerLinkActive]="['active']">Crear</button>
+        </form>
+        
+    </div>
+    
+
+</div>
